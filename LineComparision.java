@@ -33,7 +33,26 @@ public class LineComparision {
 			System.out.println("Both lines are of same length");
 			else
 				System.out.println("Both the lines are of different length");
-		
-
+	
 }
+	public static void compareLength() {
+		double line1=coordinates();
+		String s1=Double.toString(line1);
+		double line2=coordinates();
+		String s2=Double.toString(line2);
+		if(s1.compareTo(s2)<0) {
+			System.out.println(s1+" is less than the"+s2);
+			System.out.println("s2 string is greater");
+		}
+		else {
+			System.out.println(s1+" is greater than the "+s2);
+			System.out.println("s1 string is greater");
+		}
+	}
+	
 }
+	
+	
+	
+	
+	
